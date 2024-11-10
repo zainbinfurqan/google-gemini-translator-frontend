@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { GoogleGenerativeAI } from '@google/generative-ai'
-// import { GoogleAIFileManager, FileState } from '@google/generative-ai/server'
+import { GoogleAIFileManager, FileState } from '@google/generative-ai/server'
 import { useEffect } from 'react';
 
 function App() {

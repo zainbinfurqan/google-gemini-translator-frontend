@@ -44,6 +44,8 @@
     "net": false,
     "stream": false,
     "tls": false
-    }
-    
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.13"
+  }
 }

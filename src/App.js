@@ -89,9 +89,10 @@ function App() {
     setIslLoadingChat(true)
     let newChat = []
     if(translateVia === 'file') {
-        // const response = await fetch(`http://localhost:3001/speech-to-text?language=${item.language}&url=${uploadedVideoUrl}`,'GET',{}) 
-        // newChat = [...userChat,{user:'other',message:response}]
-        // userChat[index].inputFlag = false
+        const response = await fetch(`http://localhost:8888/api/hello?language=${item.language}&url=${uploadedVideoUrl}`) 
+       const response_ = await response.json()
+        newChat = [...userChat,{user:'other',message:response_}]
+        userChat[index].inputFlag = false
       }
        else{
         try {
